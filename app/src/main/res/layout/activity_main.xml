@@ -9,40 +9,38 @@
 
     <View
         android:id="@+id/bigCircleTopLeft"
-        android:layout_width="250sp"
-        android:layout_height="250sp"
-        android:layout_marginEnd="-40sp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="-65dp"
+        android:layout_marginEnd="-55dp"
         android:background="@drawable/big_circles_gradient"
-        app:layout_constraintBottom_toTopOf="@+id/loginTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/circle1"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="10sp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/circles_gradient"
-        app:layout_constraintBottom_toTopOf="@+id/loginTop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/circle2"
-        android:layout_width="30sp"
-        android:layout_height="30sp"
-        android:layout_marginStart="50sp"
-        android:layout_marginBottom="50sp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="55dp"
         android:background="@drawable/circles_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/circle3"
-        android:layout_width="110sp"
-        android:layout_height="110sp"
-        android:layout_marginEnd="20sp"
-        android:layout_marginBottom="-30sp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="-60dp"
         android:background="@drawable/circles_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -50,14 +48,14 @@
 
     <TextView
         android:id="@+id/loginTop"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="250dp"
         android:text="LOGIN"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -66,37 +64,58 @@
         android:id="@+id/editTextLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginBottom="400dp"
-        android:text="LOGIN"
-        android:textAllCaps="true"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="340dp"
+        android:text="           hello@davidhuge.com"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="349dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginBottom="300dp"
-        android:text="LOGIN"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="406dp"
+        android:text="            ********"
         android:textAllCaps="true"
-        android:textSize="40dp"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="410dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/padlock" />
 
     <Button
         android:id="@+id/loginButtonBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30sp"
-        android:layout_marginBottom="200dp"
-        android:background="@drawable/button_gradient"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/gradient_button"
+        android:paddingVertical="14dp"
         android:text="LOGIN"
         android:textAllCaps="true"
         android:textColor="@color/white"
@@ -106,15 +125,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <TextView
         android:id="@+id/dontHaveAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="120dp"
         android:text="Don't have an account?"
         android:textColor="#8c8c94"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/register"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,13 +143,13 @@
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="120dp"
         android:text="Register"
         android:textColor="@color/white"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/dontHaveAnAccount"
         app:layout_constraintTop_toBottomOf="@+id/loginButtonBottom" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
